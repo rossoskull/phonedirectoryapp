@@ -1,0 +1,43 @@
+header {
+  padding: 10px;
+  background-color: rgb(200, 200, 200);
+}
+
+#header-logo {
+  float: left;
+  font-size: 1.5em;
+  width: 200px;
+}
+
+#menu-nav {
+  float: right;
+  list-style-type: none;
+}
+
+#menu-nav li {
+  float: left;
+}
+
+#menu-nav a {
+  display: block;
+  padding: 10px 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  font-weight: 500;
+  transition: 0.15s ease-in;
+}
+
+#menu-nav a:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+#menu-nav a:active {
+  transform: scale(0.9, 0.9);
+}
+
+#menu-nav a.active {
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
