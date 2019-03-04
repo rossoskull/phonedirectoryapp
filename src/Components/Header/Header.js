@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header>
-      <p id='header-logo'>Phone Directory</p>
+      <span id='header-logo'>Phone Directory</span>
       <ul id='menu-nav'>
         <li><NavLink exact to='/'>Home</NavLink></li>
         <li><NavLink to='/add' >Add</NavLink></li>

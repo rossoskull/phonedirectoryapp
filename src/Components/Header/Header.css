@@ -1,16 +1,26 @@
 header {
   padding: 10px;
   background-color: rgb(200, 200, 200);
+  height: 45px;
 }
 
 #header-logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   float: left;
-  font-size: 1.5em;
-  width: 200px;
+  font-size: 1.8em;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 1000;
+  width: 260px;
 }
 
 #menu-nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   float: right;
+  margin: 0px;
   list-style-type: none;
 }
 
