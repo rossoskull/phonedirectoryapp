@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 import './Add.css'
 
 class Add extends React.Component {
@@ -7,7 +8,8 @@ class Add extends React.Component {
     this.state = {
       name: '',
       cno: '',
-      err: ''
+      err: '',
+      redirect: false
     }
   }
 
@@ -34,17 +36,23 @@ class Add extends React.Component {
         err: 'Please enter a valid 10 digit phone number'
       })
     } else {
+      this.props.addContact(newContact)
       this.setState({
         name: '',
         cno: '',
-        err: ''
+        err: '',
+        redirect: true
       })
-      this.props.addContact(newContact)
     }  
 
   }
 
   render() {
+
+    if (this.state.redirect) {
+      return <Redirect to='/' />
+    }
+
     return (
       <div id='add'>
         <div id='page-title'>Add</div>
