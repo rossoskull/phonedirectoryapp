@@ -24,4 +24,19 @@
 
 #contacts-table tr:nth-of-type(even) {
   background-color: rgb(230, 230, 230);
-} 
+}
+
+.delete-button {
+  background-color: rgb(212, 0, 0);
+  color: white;
+  font-weight: 900;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0px;
+  transition: 0.15s linear;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 74, 74);
+}

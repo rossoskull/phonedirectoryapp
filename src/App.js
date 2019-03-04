@@ -18,12 +18,20 @@ class App extends Component {
     }
   }
 
+  deleteContact = key => {
+    let contacts = this.state.contacts
+    contacts = contacts.filter(c => c.id !== key)
+    this.setState({
+      contacts: contacts
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path='/' render={() => <Contacts contacts={this.state.contacts} />} />
+          <Route exact path='/' render={() => <Contacts deleteContact={this.deleteContact.bind(this)} contacts={this.state.contacts} />} />
           <Route exact path='/add' render={() => <Add />} />
         </Switch>
       </div>

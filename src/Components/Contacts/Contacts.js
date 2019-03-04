@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contacts.css'
 
-const Contacts = ({ contacts }) => {
+const Contacts = ({ contacts, deleteContact }) => {
   console.log(contacts)
   return (
     <div id='contacts'>
@@ -17,7 +17,7 @@ const Contacts = ({ contacts }) => {
           <tr key={contact.id}>
             <td>{contact.name}</td>
             <td>{contact.cno}</td>
-            <td>{contact.name}</td>
+            <td><button className='delete-button' onClick={() => { deleteContact(contact.id)}}>Delete</button></td>
           </tr>
           )
         })}
