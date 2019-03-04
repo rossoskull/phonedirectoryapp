@@ -1,0 +1,27 @@
+#contacts-table {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#contacts-table td, th {
+  text-align: center;
+  padding: 15px 20px;
+  border: 0px;
+  margin: 0px;
+}
+
+#contacts-table th {
+  background-color: rgb(60, 60, 60);
+  color: rgb(235, 235, 235);
+  font-weight: 900;
+}
+
+#contacts-table tr:nth-of-type(odd) {
+  background-color: rgb(210, 210, 210);
+}
+
+#contacts-table tr:nth-of-type(even) {
+  background-color: rgb(230, 230, 230);
+} 
