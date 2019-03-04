@@ -2,6 +2,7 @@
   "name": "phdir",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rossoskull.github.io/phonedirectoryapp",
   "dependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

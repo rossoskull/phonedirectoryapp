@@ -1,5 +1,5 @@
 #form-box {
-  width: 60%;
+  width: 600px;
   margin: 0 auto;
   border-radius: 6px;
   overflow: hidden;
@@ -19,7 +19,7 @@ form {
   flex-flow: column;
   justify-content: center;
   align-content: center;
-  width: 80%;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -63,4 +63,12 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: rgb(55, 151, 0);
   cursor: pointer;
+}
+
+.preview {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }

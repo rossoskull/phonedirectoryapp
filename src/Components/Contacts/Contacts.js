@@ -2,7 +2,7 @@ import React from 'react'
 import './Contacts.css'
 
 const Contacts = ({ contacts, deleteContact }) => {
-  console.log(contacts)
+  document.title = 'Contacts \xB7 PhoneBook'  
   return (
     <div id='contacts'>
       <div id='page-title'>Contacts</div>
@@ -14,15 +14,18 @@ const Contacts = ({ contacts, deleteContact }) => {
             <th>Action</th>
           </tr>
         </thead>
-        {contacts && contacts.reverse().map(contact => {
-          return (
-          <tr key={contact.id}>
-            <td>{contact.name}</td>
-            <td>{contact.cno}</td>
-            <td><button className='delete-button' onClick={() => { deleteContact(contact.id)}}>Delete</button></td>
-          </tr>
-          )
-        })}
+        <tbody>
+          {contacts && contacts.reverse().map(contact => {
+            return (
+            <tr key={contact.id}>
+              <td>{contact.name}</td>
+              <td>{contact.cno}</td>
+              <td><button className='delete-button' onClick={() => { deleteContact(contact.id)}}>Delete</button></td>
+            </tr>
+            )
+          })}
+        </tbody>
+        
       </table>
     </div>
   )

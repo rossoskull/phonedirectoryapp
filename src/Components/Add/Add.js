@@ -53,6 +53,8 @@ class Add extends React.Component {
       return <Redirect to='/' />
     }
 
+    document.title = 'Add \xB7 PhoneBook'
+
     return (
       <div id='add'>
         <div id='page-title'>Add</div>
@@ -61,6 +63,8 @@ class Add extends React.Component {
             New Contact
           </div>
           <form onSubmit={this.handleSubmit}>
+            <p className='preview'><b>Name:</b> {this.state.name}</p>
+            <p className='preview'><b>Phone:</b> {this.state.cno}</p>
             <p id='msg'>{this.state.err ? this.state.err : '*Please fill in the details below'}</p>
             <input placeholder='Full Name' type='text' onChange={this.handleChange} name='name' value={this.state.name} />
             <input placeholder='Phone Number' type='text' onChange={this.handleChange} name='cno' value={this.state.cno} />
